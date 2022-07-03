@@ -132,7 +132,13 @@ textarea.form-control {
 /*------ Mobile ------*/
 @media only screen and (max-width: 767px) {
 	.navbar {
-		padding: 26px 0 21px;
+		padding: 0;
+	}
+
+	.navbar-brand {
+		padding-inline: 20px;
+		padding-top: 26px;
+		padding-bottom: 21px;
 	}
 
 	.navbar .container {
@@ -147,7 +153,8 @@ textarea.form-control {
 		background-color: #000000;
 		border: 0;
 		border-radius: 0;
-		padding: 14px 15px;	
+		padding: 10px 14px;	
+		margin-inline: 20px;
 	}
 
 	.navbar-toggler-icon {
@@ -155,6 +162,32 @@ textarea.form-control {
     height: 100%;
     vertical-align: inherit;
     color: #FFC107;
+	}
+
+	.navbar .container {
+		padding-inline: 0;
+	}
+
+	.navbar .navbar-collapse .navbar-nav .nav-item .nav-link.active {
+		border: none;
+		padding-bottom: .5rem;
+	}
+
+	.navbar .navbar-collapse .mb-2 {
+		margin-bottom: 0 !important;
+	}
+
+	.navbar-nav {
+		padding: 25px 40px;
+		background-color: #000;
+	}
+
+	.navbar-right {
+		display: none!important;
+	}
+
+	.navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+		color: #fff;
 	}
 
 	.navbar-toggler .close {
